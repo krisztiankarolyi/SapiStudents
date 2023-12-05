@@ -15,4 +15,9 @@ class StudentController extends Controller
         return StudentResource::collection($students);
     }
 
+    public function student(Student $student)
+    {
+        return new StudentResource($student);
+    }
+
 }
